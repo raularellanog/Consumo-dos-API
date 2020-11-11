@@ -1,0 +1,41 @@
+:root{
+    --fondo:white;
+    --letra:black;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 16px;
+    background: var(--fondo);
+    color:var(--letra);
+}
+.d{
+    padding: 3.125rem;
+    
+}
+button{
+    background: violet;
+    width: 90%;
+    height: 3em;
+    font-size: 2em;
+    cursor: pointer; 
+}
+    button:hover{
+        background: red;
+    }
+p{
+    border: teal 0.125rem solid ;
+    border-radius: 12px;
+    width: 80%;
+    margin: auto;
+}
+h2{
+    border: red 0.125rem solid ;
+    text-align: center;
+}
+#conteBandera{
+    max-width: 800px;
+    margin: auto;
+}

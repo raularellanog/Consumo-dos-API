@@ -1,6 +1,7 @@
 var boton=document.getElementById('boton');//obtener elemento
 var contenedor=document.getElementById('contenedor');//obtener elemento
 var contBandera=document.getElementById('conteBandera');//obtener elemento
+var mensaje=document.getElementById('mensaje');//obtener elemento para error
 
 boton.addEventListener('click',function(){//realizar una accion cuando se de un click
     getPosts()//llamar a metodo para obtenet fetch
@@ -15,6 +16,11 @@ boton.addEventListener('click',function(){//realizar una accion cuando se de un 
     .then(json=>{
         datob=json;//promesa
         verbandera(datob);//pasar dato a la función
+    })
+     .catch(error=>{//función para realizar accion en caso de error
+        mensaje.classList.toggle('hide');//remueve la clase con el nombre hide
+        mensaje.innerHTML=error;//escribe el error que genera 
+        setTimeout(()=>mensaje.classList.toggle('hide'),6000);//muerta el error un cierto tiempo 
     })
 });
 

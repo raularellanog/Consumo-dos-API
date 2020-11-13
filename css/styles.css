@@ -39,3 +39,14 @@ h2{
     max-width: 800px;
     margin: auto;
 }
+#mensaje{
+    background: red;
+    color:var(--letra);
+    max-width: 50em;
+    height: 8em;
+    margin: auto;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
